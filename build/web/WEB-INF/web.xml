@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <display-name>qlphongmayvalth</display-name>
+    
+    <servlet>
+        <servlet-name>dangnhap</servlet-name>
+        <servlet-class>Controllers.DangNhap</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dangnhap</servlet-name>
+        <url-pattern>/dang-nhap</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>home</servlet-name>
+        <servlet-class>Controllers.TrangChu</servlet-class>
+    </servlet>
+    
+
+    <servlet-mapping>
+        <servlet-name>home</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+  
+
+    <servlet>
+        <servlet-name>yeucauphanmem</servlet-name>
+        <servlet-class>Controllers.YeuCauPhanMem</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>yeucauphanmem</servlet-name>
+        <url-pattern>/yeu-cau-phan-mem</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>dangxuat</servlet-name>
+        <servlet-class>Controllers.DangXuat</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>dangxuat</servlet-name>
+        <url-pattern>/dang-xuat</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>lichthuchanh</servlet-name>
+        <servlet-class>Controllers.LichThucHanh</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>lichthuchanh</servlet-name>
+        <url-pattern>/lich-thuc-hanh</url-pattern>
+    </servlet-mapping>
+</web-app>
